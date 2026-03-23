@@ -1,0 +1,8 @@
+name: Frederic
+super: true
+id: 31c60f03-a1be-4369-b315-c0b1d18ff264
+password_hash: $2y$12$ZdKJjcBRISrszkkZ6jLL4.x07BgBzZRoroDJbCtLZ3jpfQi/jqX3e
+preferences:
+  collections:
+    projects:
+      view: list

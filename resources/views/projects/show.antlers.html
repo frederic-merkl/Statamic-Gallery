@@ -1,0 +1,38 @@
+<article class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8">
+
+    <header class="max-w-3xl mb-16">
+        {{ if title }}
+        <h1 class="text-5xl md:text-7xl font-mono text-red-500 tracking-tighter uppercase leading-none">
+            {{ title }}
+        </h1>
+        {{ /if }}
+
+        {{ if description }}
+        <p class="mt-8 text-xl text-gray-400 max-w-2xl">
+            {{ description }}
+        </p>
+        {{ /if }}
+    </header>
+
+    {{ if images }}
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 group">
+        {{ images }}
+        <div class="overflow-visible aspect-auto">
+            <img class="
+            relative 
+            z-10 
+            rounded-2xl 
+            transition duration-700 
+            hover:scale-150 
+            hover:brightness-100 
+            hover:z-20 
+            group-has-[img:hover]:not-[&:hover]:brightness-10"
+            src="https://picsum.photos/800/800?{{ index }}" 
+            alt="Mockup Image {{ index }}"
+            _src="{{ glide:url width='1200' height='1000' fit='crop' }}" _alt="BILD">
+        </div>
+        {{ /images }}
+    </section>
+    {{ /if }}
+
+</article>
