@@ -18,4 +18,4 @@ The interaction relies on the combination of `:has()` and `:not()`:
 
 ## Development Mockups
 Currently using Picsum for testing:
-`src="https://picsum.photos/800/800?random={{ index }}"`
+`src="https://picsum.photos/800/800?{{ index }}"`
